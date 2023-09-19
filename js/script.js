@@ -53,14 +53,14 @@ const submitForm = (e) => {
 };
 
 const hideFileBtn = () => {
-  const btnFile = document.querySelector(".text_input_file");
+  const labelBtnWrapp = document.querySelector(".text_input_file");
 
   if (messageInput.value !== "") {
-    btnFile.removeAttribute("for");
-    btnFile.style.color = "grey";
+    inputFile.removeAttribute("type");
+    labelBtnWrapp.style.color = "grey";
   } else {
-    btnFile.setAttribute("for", "fileInput");
-    btnFile.style.color = "#000000";
+    inputFile.setAttribute("type", "file");
+    labelBtnWrapp.style.color = "#000000";
   }
 };
 
