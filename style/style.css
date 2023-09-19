@@ -31,6 +31,10 @@ main {
   height: 100%;
 }
 
+button{
+    cursor: pointer;
+}
+
 .container {
   max-width: 710px;
   width: 100%;
