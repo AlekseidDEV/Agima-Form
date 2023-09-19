@@ -14,8 +14,8 @@ const sendForm = (persen) => {
     body: JSON.stringify(persen),
     headers: {
       "Content-Type": "application/json;charset=utf-8",
-    },
-  });
+    }
+  })
 };
 
 const validateForm = (elems) => {
@@ -44,6 +44,12 @@ const submitForm = (e) => {
 
     if (validateForm(inputs) && checkBox.checked === true) {
       sendForm(formBody)
+       .then(() => {
+            inputs.forEach((input) => {
+                input.value = ''
+            })
+       })
+       .catch('упс, ошибка')
     } else {
       alert("заполните поля");
     }
@@ -79,6 +85,7 @@ const closeFile = () => {
     textFileName.textContent = "";
   });
 };
+
 const getFile = () => {
   if (inputFile.files.length > 0) {
     const fileName = inputFile.files[0].name;
