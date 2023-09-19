@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="./style/style.css" >
+    <script src="./js/script.js" defer></script>
+    <title>AGIMA</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="block_form">
+          <h1 class="title_block_form">Анкета для новых клиентов AGIMA</h1>
+
+          <div class="wrapp_content_form">
+            <form class="form">
+              <div class="inputs_block">
+                <h3 class="title_form">Сообщение в свободной форме</h3>
+                <input
+                  name="user_name"
+                  type="text"
+                  class="input input_contact input_user"
+                  placeholder="Ваше имя"
+                >
+                <input
+                  name="company"
+                  type="text"
+                  class="input input_contact"
+                  placeholder="Компания"
+                >
+                <input
+                  name="phone"
+                  type="tel"
+                  class="input input_contact"
+                  placeholder="Телефон"
+                >
+                <input
+                  name="email"
+                  type="email"
+                  class="input input_contact"
+                  placeholder="Электронная почта"
+                >
+                <div class="wrapp_input_block">
+                  <input
+                    name="message"
+                    type="text"
+                    class="input input_message"
+                    placeholder="Напишите текст обращения"
+                  >
+                  <span
+                    id="question"
+                    class="question_text question_back question_position"
+                    >?</span
+                  >
+
+                  <div class="wrapp_file">
+                    <label class="text_input_file" for="fileInput">
+                      <input
+                        type="file"
+                        id="fileInput"
+                        accept=".jpg, .jpeg, .png, .pdf"
+                        style="display: none"
+                      >
+                      или прикрепите файл
+                    </label>
+                    <span class="file_name"></span>
+                    <span class="close_file"></span>
+                  </div>
+                  <!-- /.wrapp_file -->
+                </div>
+
+                <!-- /.wrapp_input_block -->
+
+                <div class="send_form">
+                  <div class="agree_blocK">
+                    <label class="label"
+                      ><input type="checkbox" class="checkbox" >
+                      <span class="custom_radio"></span>
+                      <span class="text_chek_panel"
+                        ><span class="text_agree">
+                          согласен на обработку моих</span
+                        >
+                        <span class="green_color">персональных данных</span>
+                      </span>
+                    </label>
+                  </div>
+                  <!-- /.agree_blocK -->
+                  <button type="submit" id="send_form_btn">Отправить</button>
+                </div>
+                <!-- /.send_form -->
+              </div>
+              <!-- /.inputs_block -->
+
+              <!-- /.block_description_text -->
+            </form>
+
+            <div class="block_description_text">
+              <h3 class="title_desc">Что написать в сообщении или файле?</h3>
+
+              <div class="wrapp_ol">
+                <ol class="list_desc">
+                  <li class="li_desc_title__item">
+                    Чем вы занимаетесь?
+                    <p class="list_desc__text">
+                      Расскажите о своей компании. <br>
+                      Как работаете, на чем зарабатываете?<br>
+                      Кто ваши конкуренты? <br>
+                      Чем вы от них отличаетесь?
+                    </p>
+                  </li>
+                  <li class="li_desc_title__item">
+                    В чем ваша задача?
+                    <p class="list_desc__text">
+                      Чего хотите достичь в ближайшем будущем?<br>
+                      Что вам мешает?
+                    </p>
+                  </li>
+                  <li class="li_desc_title__item">
+                    Каким вы видите решение задачи?
+                    <p class="list_desc__text">
+                      Как планируете достичь своих целей?<br>
+                      Какие решения пробовали раньше?
+                    </p>
+                  </li>
+                  <li class="li_desc_title__item">
+                    Какие у вас ожидания от результата?
+                    <p class="list_desc__text">
+                      В каком виде вы хотите видеть решение вашей задачи?<br>
+                      В какой срок?<br>
+                      Почему он важен? На что это должно быть похоже?
+                    </p>
+                  </li>
+                  <li class="li_desc_title__item">
+                    Сколько денег планируете потратить?
+                    <p class="list_desc__text">
+                      Каков ваш бюджет? <br>
+                      Почему вы готовы потратить именно такую сумму?
+                    </p>
+                  </li>
+                </ol>
+
+                <button id="exit_btn" class="exit_btn">
+                  Вернуться к заполнению
+                </button>
+              </div>
+              <!-- /.wrapp_ol -->
+            </div>
+          </div>
+          <!-- /.wrapp_content_form -->
+        </div>
+        <!-- /.block_form -->
+      </div>
+    </main>
+  </body>
+</html>

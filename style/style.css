@@ -1,0 +1,359 @@
+/* zero */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  border: 0 none;
+  outline: 0 none;
+  text-decoration: none;
+}
+/* zero */
+
+/* fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Medium.ttf);
+  font-weight: 600;
+}
+/* fonts */
+
+body {
+  background: url(../img/Background\ image.png) no-repeat center;
+  height: 100vh;
+}
+
+main {
+  height: 100%;
+}
+
+.container {
+  max-width: 710px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* form */
+.title_block_form {
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+.form {
+  border-radius: 16px;
+  border: 1px solid #000;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 23px 55px 40px 55px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputs_block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 518px;
+  width: 100%;
+}
+
+.title_form {
+  color: #000;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 48px;
+}
+
+.input {
+  max-width: 518px;
+  width: 100%;
+  /* text */
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.input_contact {
+  border-bottom: 1px solid #000;
+  background: #fff;
+  padding: 14px 16px 14px;
+  margin-bottom: 32px;
+}
+
+.input_message {
+  border-radius: 8px;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 15px 16px 127px;
+  margin-bottom: 8px;
+}
+.wrapp_input_block {
+  max-width: 518px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  text-align: left;
+}
+
+.question_text {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.question_back {
+  background: #6f6f6f;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.question_back:hover {
+  background: #05ac6a;
+  transition: 0.2s;
+}
+
+.question_position {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+}
+
+.text_input_file {
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0px 15px;
+}
+
+.text_chek_panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text_agree {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  max-width: 215px;
+  width: 100%;
+}
+
+.green_color {
+  color: #05ac6a;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#send_form_btn {
+  width: 239px;
+  height: 56px;
+  border-radius: 8px;
+  background: #6f6f6f;
+  /* text */
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#send_form_btn:hover {
+  background: #05ac6a;
+  transition: 0.2s;
+}
+
+.custom_radio {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  border: 1px solid #05ac6a;
+  background: #fff;
+}
+
+.custom_radio::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: 50%;
+  background: #05ac6a;
+  width: 11px;
+  height: 11px;
+  border-radius: 9px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.checkbox:checked + .custom_radio::before {
+  opacity: 1;
+}
+
+.checkbox {
+  display: none;
+}
+
+.send_form {
+  display: flex;
+  justify-content: space-between;
+  max-width: 518px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.title_desc {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 57px;
+}
+.agree_blocK {
+  display: flex;
+  align-items: center;
+  gap: 0px 18px;
+}
+
+.block_description_text {
+  display: none;
+  border-radius: 16px;
+  border: 1px solid #000;
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 23px 55px 40px 55px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.li_desc_title__item {
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+
+.li_desc_title:last-child {
+  margin-bottom: 42px;
+}
+
+.wrapp_ol {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list_desc__text {
+  color: #000;
+  font-family: Roboto;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 8px;
+}
+
+.exit_btn {
+  border-radius: 8px;
+  background: url(../img/arrow-back-svgrepo-com\ 1.svg) no-repeat #05ac6a;
+  background-position: 5px 4px;
+  position: relative;
+  width: 280px;
+  height: 56px;
+  /* text */
+  color: #fff;
+  font-family: Roboto;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: right;
+  padding-right: 24px;
+}
+
+.file_name {
+  color: #05ac6a;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.close_file {
+  background: url(../img/close.svg) no-repeat center/cover;
+  width: 16px;
+  height: 16px;
+  display: none;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.wrapp_file {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px 10px;
+}
+
+/* form */
