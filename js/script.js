@@ -44,8 +44,6 @@ const submitForm = (e) => {
 
     if (validateForm(inputs) && checkBox.checked === true) {
       sendForm(formBody)
-        .then((r) => r.json())
-        .then((data) => console.log(data));
     } else {
       alert("заполните поля");
     }
@@ -71,7 +69,6 @@ const blockAppearence = (e) => {
   } else if (e.target.id === "exit_btn") {
     descriptionBlock.style.display = "none";
     form.style.display = "flex";
-    console.log(e.target);
   }
 };
 
